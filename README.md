@@ -1,39 +1,40 @@
 <div align="center">
-  <img src="./assets/profile-banner.svg" alt="znxzsy · Model Alignment, Human Feedback and Multimodal AI" width="100%">
+  <img src="./assets/profile-banner.svg" alt="znxzsy · Verifiable Data, Human Feedback and Multimodal AI" width="100%">
 
   <br>
 
+  [![VeriInk](https://img.shields.io/badge/Featured-VeriInk-168566?style=flat-square)](https://github.com/znxzsy/VeriInk)
   [![AlignLedger](https://img.shields.io/badge/Featured-AlignLedger-315d88?style=flat-square)](https://github.com/znxzsy/AlignLedger)
-  [![Python](https://img.shields.io/badge/Python-3.9%2B-1d7a55?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-  [![Human Feedback](https://img.shields.io/badge/Focus-Human_Feedback-e3a94f?style=flat-square)](https://github.com/znxzsy?tab=repositories)
+  [![Post Training](https://img.shields.io/badge/Focus-Post--training-e3a94f?style=flat-square)](https://github.com/znxzsy?tab=repositories)
 </div>
 
-我在做模型训练前后那段不太显眼、却很费工程的工作：人类反馈数据、质量复核、模型评测，以及把这些流程整理成可以重复使用的工具。
+我在做模型效果背后的那段工程：把可验证仿真、人类反馈、质量复核和模型评测接成真正能迭代的数据系统。
 
-最近把实际标注协作中遇到的数据丢失、版本冲突和归属不清整理成了 [AlignLedger](https://github.com/znxzsy/AlignLedger)。它能直接运行，也保留了从标注到训练数据导出的完整记录。
+最近公开了两个相互补充的项目。**VeriInk** 针对模型薄弱点生产可复现的合成数据；**AlignLedger** 负责多人标注、二次复核、责任追踪和训练前导出。一个解决数据从哪里来，一个解决数据如何可信地留下来。
 
 ## Selected work
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/znxzsy/AlignLedger">AlignLedger</a></h3>
-      <p>面向强化学习与大模型训练的人类反馈数据平台。支持多人标注、二次复核、实名追踪、质量榜单和可审计导出。</p>
-      <p><code>Python</code> <code>SQLite</code> <code>RLHF</code> <code>DPO</code> <code>KTO</code></p>
+      <h3><a href="https://github.com/znxzsy/VeriInk">VeriInk</a></h3>
+      <p>可验证的手写仿真 Agent。生成带标签、seed、边界检查与哈希的合成场景，把失败样本送回下一轮数据生产。</p>
+      <p><code>Synthetic Data</code> <code>Multimodal</code> <code>Post-training</code> <code>Evaluation</code></p>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/znxzsy/poi-agent">poi-agent</a></h3>
-      <p>面向内容风控的多智能体对抗测试框架。Teacher 生成攻击样本，Student 负责防御，再用评估结果推动下一轮修复。</p>
-      <p><code>Python</code> <code>Multi-Agent</code> <code>Evaluation</code> <code>Safety</code></p>
+      <h3><a href="https://github.com/znxzsy/AlignLedger">AlignLedger</a></h3>
+      <p>面向强化学习与大模型训练的人类反馈平台，支持多人标注、二次复核、实名追踪、质量榜单和可审计导出。</p>
+      <p><code>RLHF</code> <code>DPO</code> <code>KTO</code> <code>Human Feedback</code></p>
     </td>
   </tr>
 </table>
 
-## Working on
+## Current focus
 
-- [EduAgent](https://github.com/znxzsy/eduagent)：多模态教育 Agent、智能批改与学习沙盒实验。
-- 人类反馈数据的清洗、复核和训练前质量控制。
-- 多模态模型评测，以及更容易复现的 Agent 对抗实验。
+- 为后训练与基座模型持续生产可验证数据，并用回归结果推动下一轮生成。
+- 多模态教育 Agent、智能批改与真实任务评测。
+- 人类反馈数据的清洗、复核、归因和训练前质量控制。
+- 多智能体对抗测试与安全评估：[poi-agent](https://github.com/znxzsy/poi-agent)。
 
 ## Tools I use
 
@@ -45,4 +46,4 @@
   <img src="https://img.shields.io/badge/GitHub_Actions-252a26?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions">
 </p>
 
-代码、数据和评测方法都还在继续整理。具体问题直接开 Issue，比一句泛泛的交流更有用。
+如果你在做模型后训练、可验证数据生产、私有化部署或多模态评测，欢迎联系微信 **`znxzsy`**。具体问题也可以直接在对应项目开 Issue。
